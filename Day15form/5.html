@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#img1
+		{
+			height: 550px;
+			width: 500px;
+			display: block;
+			margin: 0 auto;
+		}
+
+
+		#b1
+		{
+			display: block;
+			margin: 0 auto;
+		}
+		
+
+	</style>
+	<script type="text/javascript">
+		function abcd()
+		{
+			var a = document.getElementById("img1").getAttribute("src")
+			if(a == "Image1.jpeg")
+			{
+				document.getElementById('img1').setAttribute("src","Image2.jpeg")
+			}	
+			else
+				{
+				document.getElementById('img1').setAttribute("src","Image1.jpeg")
+			}	
+
+		}
+		function abc()
+		{
+			document.getElementById("img1").setAttribute("src","image2.jpeg")
+			
+		}
+		
+		
+
+	</script>
+</head>
+<body>
+	<img src="image1.jpeg" id="img1">
+	<input type="button" id="b1" value="click" onclick="abcd()">
+
+</body>
+</html>

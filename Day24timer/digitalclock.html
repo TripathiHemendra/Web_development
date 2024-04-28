@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#main
+		{
+			height: 300px;
+			width: 500px;
+			background: cyan;
+			border: black solid 5px;
+			margin: 0 auto;
+			border-radius: 10px;
+		}
+		#name
+		{
+			font-size: 50px;
+			text-align: center;
+			padding-top: 10px;
+			border-bottom: black solid 5px;
+		}
+	
+		#hr
+		{
+			height: 100px;
+			width: 100px;
+			background: white;
+			border: solid black 2px;
+			text-align: center;
+			border-radius: 50px;
+			margin: 30px 30px ;
+			float: left;
+			font-size: 80px;
+			background: red;
+		}
+		#min
+		{
+			height: 100px;
+			width: 100px;
+			background: white;
+			border: solid black 2px;
+			text-align: center;
+			border-radius: 50px;
+			margin: 30px 20px ;
+			float: left;
+			font-size: 80px;
+			background: orange;
+		}
+		#sec
+		{
+			height: 100px;
+			width: 100px;
+			background: white;
+			border: solid black 2px;
+			text-align: center;
+			border-radius: 50px;
+			margin: 30px 30px ;
+			float: left;
+			font-size: 80px;
+			background: yellow;
+		}
+
+	</style>
+	<script type="text/javascript">
+
+		function abc()
+		{
+			var d= new Date()
+			var a = d.getHours()
+			var b =d.getMinutes()
+			var c= d.getSeconds()
+			if (a<10)
+			 {
+			 	a="0"+a
+			 }
+			 if (b<10)
+			 {
+			 	b="0"+b
+			 }
+			 if (c<10)
+			 {
+			 	c="0"+c
+			 }
+			document.getElementById('hr').innerHTML=a
+			document.getElementById('min').innerHTML=b
+			document.getElementById('sec').innerHTML=c
+		}
+		function timer()
+		{
+			setInterval(abc,1000)
+		}
+
+	</script>
+</head>
+<body onload="timer()">
+        <div id="main">
+        	<div id="name"><b>Digital Clock</b1><div>
+           
+        	<div id="hr"></div>
+        	<div id="min"></div>
+        	<div id="sec"></div>
+        	
+
+        </div>
+</body>
+</html>

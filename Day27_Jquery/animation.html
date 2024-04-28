@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+             $("#b1").click(function(){
+                 $("#d1").animate({"top":"0px"},3000)
+             })
+		})
+	</script>
+	<style type="text/css">
+		#d1
+		{
+			height: 100px;
+			width: 100px;
+			background: yellow;
+			position: fixed;
+			top: -100px;
+			opacity: 0.3jj;
+		}
+		.bt
+		{
+			background: blue;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+	</style>
+	</head>
+<body>
+        <div id="d1"></div>
+        <h1>Hellow</h1>
+        <button id="b1" class="bt">Click Now</button>
+        <button id="b2" class="bt">Click Now</button>
+</body>
+</html>

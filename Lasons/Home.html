@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+		.main
+		{
+			width: 100%;
+			font-family: sans-serif;
+		}
+		.header
+		{
+			height: 130px;
+		}
+		.head1
+		{
+			height: 130px;
+			width: 500px;
+			float: left;
+		}
+		#logo
+		{
+			margin-left: 200px;
+		}
+		.head2
+		{
+			height: 130px;
+			width: 900px;
+			float: left;
+		}
+		#nav
+		{
+			height: 30px;
+			width: 900px;		
+			margin: 40px 20px;
+/*			background: red;*/
+		}
+		#nav ul
+		{
+                list-style: none;
+                overflow: auto;
+                margin: 0;
+	         padding: 0; 
+		}
+		#nav ul li
+		{
+                float: left;
+                height: 20px;
+                margin-left: 30px;
+                padding-right: 20px;
+                text-align: center;
+	         cursor: pointer;
+	         border-right: grey solid 1px;
+		}
+
+		#nav ul li a
+		{
+              text-decoration: none;
+              color: black;
+              font-size: 16px;
+
+		}
+		#nav ul li a:hover
+		{
+                  color: blue;
+
+		}
+		.content1
+		{
+			height: 600px;
+			width: 100%;
+		}
+		.apps
+		{
+			height: 250px;
+			width: 50px;
+			margin-top: -550px;
+			margin-left: 1350px;
+			position: fixed;			
+		}
+		.applogo
+		{
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+
+			
+		}
+		.con1img
+		{
+			height: 600px;
+			width: 100%;
+		}
+		.whatsaap
+		{
+			height: 100px;
+			width: 100px;
+			margin-left: 1340px;
+			margin-top: -150px;
+			position: fixed;
+		}
+              #whatsaapimg
+		{
+			height: 80px;
+			width: 80px;
+			
+		}
+		.content2
+		{
+			height: 300px;
+			border-bottom: grey solid 1px;
+			padding-left: 80px;
+		}
+		.content2a
+		{
+			height: 270px;
+			width: 400px;
+/*			border: red solid 2px;*/
+			margin: 20px 20px;
+			float: left;
+		}
+		.content21
+		{
+			height: 220px;
+			width: 400px;			
+		}
+
+		.content22
+		{
+			height: 30px;
+			margin-top: 10px ;
+			margin-left: 80px;
+			
+		}
+		.content22 a
+		{
+			 text-decoration: none;
+			 color: black;
+                      font-size: 20px;
+			
+		}
+		.cate-pic
+		{
+			border-radius: 20px;
+		}
+		.content3
+		{
+			height: 500px;
+/*			border: red solid 1px;*/
+			
+		}
+		.content3a
+		{
+			height: 80px;
+			margin-left: 400px;
+			font-size: 50px;
+			font-weight: bold;
+			padding-top: 20px;			
+		}
+		.content3b
+		{
+			height: 350px;
+			width: 1300px;
+			margin-left: 100px;
+			padding-top: 20px;
+/*			border: red solid 1px;*/
+
+		}
+		.content3b1
+		{
+			height: 300px;
+			width: 300px;
+			margin: 5px;
+			font-size: 60px;
+			font-weight: bold;
+			border: lightgray solid 1px;
+                     float: left;
+		}
+		.content4
+		{
+			height: 480px;
+/*			border: red solid 1px;*/
+			
+		}
+		.content4a
+		{
+			height: 80px;
+			margin-left: 400px;
+			font-size: 50px;
+			font-weight: bold;
+			padding-top: 20px;			
+		}
+		.content4b
+		{
+			height: 370px;
+			width: 1200px;
+			margin-left: 150px;
+			font-size: 30px;
+			padding-top: 20px;
+/*			border: red solid 1px;*/
+
+		}
+		.content4b1
+		{
+			height: 240px;
+			width: 350px;
+			margin: 10px;
+			border: lightgray solid 1px;
+                     float: left;
+                     padding-left: 20px;
+                     border-radius: 20px;
+		}
+		.aa
+		{
+                 height: 30px;
+                 width: 330px;
+                 padding-top: 10px;
+                 background: #ededed;
+                 border-radius: 10px;
+                 text-align: center;
+                 font-size: 22px;
+                 margin-top: 10px;
+
+		}.aaa
+		{
+
+                 height: 50px;
+                 width: 330px;
+                 background: #ededed;
+                 border-radius: 10px;
+                 text-align: center;
+                 font-size: 22px;
+                 margin-top: 10px;
+
+		}
+		.content5
+		{
+			height: 500px;
+/*			border: red solid 2px;*/
+		}
+		.content5a
+		{
+			height: 400px;
+			width: 600px;
+			margin-left: 200px;
+			padding: 10px 10px;
+/*			border: lightgray solid 1px;*/
+			float: left;
+
+		}
+		.content5b
+		{
+			height: 500px;
+			width: 550px;
+			margin-left: 10px;
+/*			border: red solid 1px;*/
+			float: left;
+
+		}
+		.blue
+		{
+			font-size: 22px;
+			color: blue;
+		}
+		.bold
+		{
+			font-size: 45px;
+		}
+		.line
+		{
+			font-size: 20px;
+			color: grey;
+		}
+		.readmore
+		{
+			height: 40px;
+			width: 150px;
+			padding: 10px 10px;
+			font-size: 25px;
+		       border-radius: 10px;
+			background: violet;
+			margin: 20px 20px;
+		}
+		.readmore
+		{
+			background: blue;
+			cursor: pointer;
+		}
+		.content6
+		{
+			height: 400px;
+			background: lightgrey;
+		}
+		.content6a
+		{
+			height: 70px;
+			margin-left: 500px;
+                     font-size: 50px;
+                     font-weight: bold;
+                     padding-top:40px;
+		}
+		.content6b
+		{
+			height: 250px;
+			width: 1200px;
+			margin-left: 100px;
+			background: whitesmoke;
+		}
+	</style>
+</head>
+<body>
+       <div class="main">
+       	<div class="header">
+       		<div class="head1"><img src="logo.png" id="logo"> </div>
+       		<div class="head2">
+       			<div id="nav">
+       			 <ul>
+      		        <li><a href="Home.html">HOME</a></li>
+      		        <li><a href="# ">ABOUT US </a></li>
+      		        <li><a href="flower.html">OUR PRODUCTS</a></li>
+      		        <li><a href="special.html">OUR PARTNERS</a></li>
+      		        <li><a href="account.html">CAREER</a></li>
+      		        <li><a href="contact.html">CONTACT US</a></li>
+      	         </ul>
+       		 </div>
+       		</div>
+       	</div>       	
+       	<div class="content1">
+       		<img src="slide1.jpg" class="con1img">
+       	
+       		<div class="apps">
+       			<a href="http://www.facebook.com" target="_blank"><img src="facebook.jpg" class="applogo">
+       			<a href="http://www.instagram.com" target="_blank"><img src="insta.jpg" class="applogo">
+       			<a href="http://www.twitter.com" target="_blank"><img src="twiter.jpg" class="applogo">
+       			<a href="http://www.linkedin.com" target="_blank"><img src="linkedin.jpg" class="applogo">
+       			<a href="http://www.youtube.com" target="_blank"><img src="youtube.jpg" class="applogo">
+       		</div>
+       		<div class="whatsaap">
+       			<a href="http://www.whatsaap.com" target="_blank"><img src="whatsaap.png" id="whatsaapimg">
+       		</div>
+       	</div>
+       	<div class="content2">
+       		<div class="content2a">
+       			<div class="content21"><a href="#"><img src="cate-pic1.jpg" class="cate-pic"></a> </div>
+       			<div class="content22"> <a href="#">Manufacturing Product</a></div>
+       		</div>
+       		<div class="content2a">
+       			<div class="content21"><a href="#"><img src="cate-pic2.jpg" class="cate-pic"></a> </div>
+       			<div class="content22"> <a href="#">Food & Nutraceutical Division</a></div>
+       		</div>
+       		<div class="content2a">
+       			<div class="content21"><a href="#"><img src="cate-pic3.jpg" class="cate-pic"></a> </div>
+       			<div class="content22"> <a href="#">Solvent & Chemicals</a></div>
+       		</div>
+       	</div>
+       	<div class="content3">
+       	<div class="content3a">FEATURED PRODUCTS</div>
+       	<div class="content3b">
+       		<div class="content3b1"><img src="feat-prd1.jpg"> </div>
+       		<div class="content3b1"><img src="feat-prd2.jpg"></div>
+       		<div class="content3b1"><img src="feat-prd3.jpg"></div>
+       		<div class="content3b1"><img src="feat-prd4.jpg"></div>
+
+       	</div>      	
+       	</div>
+       	<div class="content4">
+       	<div class="content4a">OUR ASSOCIATES COMPANIES</div>
+       	<div class="content4b">
+       		<div class="content4b1"><img src="associate1.jpg"><div class="aa">EARTH ESSENCE</div> </div>
+       		<div class="content4b1"><img src="associate2.jpg"><div class="aa">ONE LIFE</div></div>
+       		<div class="content4b1"><img src="associate3.jpg"><div class="aaa">LASONS GENERAL TRADING LLC (UAE)</div></div>
+       	</div>
+             </div>
+             <div class="content5">
+             	<div class="content5a"><img src="wel-img.jpg"> </div>
+             	<div class="content5b">
+             		<p class="blue">ABOUT THE COMPANY</p>
+<p class="bold">Lasons India Pvt. Ltd.</p><br>
+<p class="line">Lasons is a leading manufacturer of Vitamin B3 (Niacin & Niacinamide) and specialty chemicals.</p><br>
+
+<p class="line">Lasons India Pvt. Ltd. was founded in the year 1979 by Mr. Pravin Aggarwal (Chairman & Managing Director) (IIT) (MSEE) (USA). It was in the year 1984 the company took the first step in manufacturing pharmaceutical bulk drugs in India.</p><br>
+
+<p class="line">For the last 40 years our products Niacin and Niacinamide (Vitamin B3) have been very well accepted in the pharmaceutical, food, feed & electroplating worldwide.</p>
+
+<div class="readmore">ReadMore..</div>
+             	</div>
+             </div>
+             <div class="content6">
+             	<div class="content6a">OUR CERTIFICATION</div>
+             	<div class="content6b"></div>
+             </div>
+       </div>
+
+</body>
+</html>
+<!-- <i class="fas fa-caret-down"></i> -->

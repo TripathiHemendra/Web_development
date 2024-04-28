@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#a
+		{
+		  margin: 20px auto;
+                height: 200px;
+                width: 300px;
+                background: pink;
+                border: solid black 2px;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		var random=parseInt(Math.random()*12+1);
+		function Sevenup()
+		{
+	
+			if (random > 7) 
+			{
+                       document.write("Number is "+ random +"<br> You are Winner😎");
+              
+			}
+			else
+			{
+				document.write("Number is "+ random +"<br> You are Looser..😒");
+			}
+		}
+		function Sevendown()
+		{			
+			
+			if (random < 7) 
+			{
+                       document.write("Number is "+ random +"<br> You are Winner😎");
+              
+			}
+			else
+			{
+				document.write("Number is "+ random +"<br> You are Looser..😒");
+			}
+		}
+		function Seven()
+		{		
+			if (random == 7) 
+			{
+                       document.write("Number is "+ random +"<br> You are Winner😎");
+              
+			}
+			else
+			{
+				document.write("Number is "+ random +"<br> You are Looser..😒");
+			}
+		}
+                    			
+
+	</script>
+</head>
+<body>
+	<div id="a">
+       <input type="button" value=" 7 Up " onclick="Sevenup()" id="b1">
+       <input type="button" value="7 down " onclick="Sevendown()" id="b2">
+       <input type="button" value="Exact 7" onclick="Seven()" id="b3">
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#abc
+		{
+              display: block;
+              margin: 0 auto;
+              height: 400px;
+              width: 500px;
+		}
+			
+	</style>
+	<script type="text/javascript">
+		var a = 1
+
+		function next()
+		{
+			a=a+1
+			if(a>4)
+			{
+				a=1
+			}				
+		 document.getElementById('abc').setAttribute("src","image"+a+".jpeg")	
+		}
+		function start()
+		{
+		    setInterval(next,500)
+		}
+	</script>
+</head>
+<body onload="start()">
+      <img src="image1.jpeg" id="abc">
+      <!-- <input type="button" value="next" onclick="start()" id="b"> -->
+</body>
+</html>

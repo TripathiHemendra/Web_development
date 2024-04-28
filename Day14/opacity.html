@@ -1,0 +1,46 @@
+
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#a
+		{
+			background: red;
+		       height: 100px;
+		       width: 100px;
+			display: block;
+			margin: 10px auto;
+		}
+		#ac
+		{
+			background: blue;
+			border-radius: 5px;
+			display: block;
+			margin: 10px auto;
+			color: white;
+		}
+
+	</style>
+	<script type="text/javascript">
+		var a=1.0
+		function first()
+		{
+			a=a-0.1
+	      document.getElementById('a').style.opacity = a;
+		}
+		function second()
+		{
+			a=a+0.1
+	      document.getElementById('a').style.opacity=a;	
+		}
+	
+
+	</script>
+</head>
+<body>
+	<div id="a"></div>
+       <input type="button" value="decrese" id="ac" onclick="first()">
+       <input type="button" value="increse" id="ac" onclick="second()">
+
+</body>
+</html>

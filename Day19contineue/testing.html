@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#abc
+		{
+              display: block;
+              margin: 0 auto;
+              height: 400px;
+              width: 500px;
+		}
+             #a{
+             	display: block;
+             	margin-left: 45%;
+             	margin-top: 10px;
+             	float: left;
+             }
+              #b{
+             	display: block;
+             	margin-left: 50%;
+             	margin-top: 10px;
+             }
+			
+	</style>
+	<script type="text/javascript">
+		var a = 1
+
+		function next()
+		{
+			a=a+1
+			if(a>2)
+			{
+				a=1
+			}
+		}				
+		 document.getElementById('abc').setAttribute("src","image1.jpeg")	
+
+		function start()
+		{
+			setInterval(next,2000)
+		}
+	</script>
+</head>
+<body>
+      <img src="image1.jpeg" id="abc">
+      <input type="button" value="next" onclick="start()" id="b">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function reverse()
+		{
+			var n = document.getElementById('t1').value
+                  var rev = 0;
+                  var rem;
+			while(n != 0 )
+			{
+				rem = n % 10
+				n  = n / 10
+				rev = rev * 10 + rem
+			}
+			document.write("Reverse number  is " + rev )
+		}
+	</script>
+</head>
+<body>
+      <input type="text" id="t1">
+      <input type="button" value="Reverse Number" onclick="reverse()">
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var chance=3
+		function game()
+		{
+			var random=parseInt(Math.random()*10);
+			var a=parseInt(document.getElementById('ab').value)
+			
+			
+			if (a==random) 
+			{
+                       alert("Winner😎😎😎")
+              
+			}
+			else
+			{
+				alert("try again😒😒"+random +" ----- "+a)
+				chance--
+			}
+			// document.getElementById('b1').disabled="true"
+			
+		    if (chance==0) 
+		    {
+		    	document.getElementById('b1').disabled="true"
+		    }
+
+		}
+	</script>
+</head>
+<body>
+       <input type="text" id="ab"><br>
+       <input type="button" value="click button" onclick="game()" id="b1">
+</body>
+</html>

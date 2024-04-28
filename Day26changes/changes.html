@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#d1
+		{
+			height: 200px;
+			width: 300px;
+			background: red;
+		}
+	</style>
+	<script type="text/javascript">
+		function background()
+		{
+			var bg = document.getElementById('t1').value
+			document.getElementById('d1').style.backgroundColor=bg;
+		
+			var fontSize = document.getElementById('t2').value
+			document.getElementById('d1').style.fontSize=fontSize+"px";
+		
+			var textcolor = document.getElementById('t3').value
+			document.getElementById('d1').style.color=textcolor;
+
+			var op = document.getElementById('t4').value
+			document.getElementById('d1').style.opacity=op;
+		}
+	</script>
+</head>
+<body>
+        <div id="d1">Himanshu</div>
+        <input type="text" id="t1"><input type="button" value="change background" onclick="background()"><br><br>
+        <input type="text" id="t2"><input type="button" value="change font" onclick="background()"><br><br>
+        <input type="text" id="t3"><input type="button" value="change text color" onclick="background()"><br><br>
+         <input type="text" id="t4"><input type="button" value="change Opacity" onclick="background()">
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function game()
+		{
+			var random=parseInt(Math.random()*10);
+			var a=parseInt(document.getElementById('ab').value)
+			
+			
+			if (a==random) 
+			{
+              document.write("Winner😎😎😎<br>")
+              
+			}
+			else
+			{
+				document.write("try again😒😒<br>")
+			}
+			document.write(random+" ----- "+a);
+		    }
+		
+	</script>
+</head>
+<body>
+       <input type="text" id="ab">
+       <input type="button" value="click" onclick="game()">
+</body>
+</html>

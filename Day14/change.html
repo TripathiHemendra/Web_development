@@ -1,0 +1,48 @@
+
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#a
+		{
+			background: red;
+		       height: 100px;
+		       width: 100px;
+			display: block;
+			margin: 10px auto;
+		}
+		#ac
+		{
+			background: blue;
+			border-radius: 5px;
+			display: block;
+			margin: 10px auto;
+			color: white;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function first()
+		{
+	      document.getElementById('a').style.width="300px";
+		}
+		function background()
+		{
+	      document.getElementById('a').style.background="blue";	
+		}
+		function xyz()
+		{
+	      document.getElementById('a').style.height="200px";	
+		}
+		
+
+	</script>
+</head>
+<body>
+	<div id="a"></div>
+       <input type="button" value="change width" id="ac" onclick="first()">
+       <input type="button" value="change background" id="ac" onclick="background()">
+       <input type="button" value="change height" id="ac" onclick="xyz()">
+       
+</body>
+</html>

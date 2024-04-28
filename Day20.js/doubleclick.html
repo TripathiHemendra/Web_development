@@ -1,0 +1,32 @@
+<html>
+<head>
+      <title></title>
+      <style type="text/css">
+            #d1
+            {
+                  height: 100px;
+                  width: 100px;
+                  background: red;
+            }
+      </style>
+      <script type="text/javascript" src="Jquery.js"></script>
+      <script type="text/javascript">
+            $(document).ready(function(){
+                  $("#b1").dblclick(function(){
+                        $("#d1").fadeIn()
+                  })
+
+                  $("#b2").mouseleave(function(){
+                        $("#d1").fadeOut()
+                  })
+            })
+      </script>
+
+</head>
+<body>
+      <div id="d1"></div>
+      <input type="button" value="FadeIn" id="b1">
+      <input type="button" value="FadeOut" id="b2">
+
+</body>
+</html>

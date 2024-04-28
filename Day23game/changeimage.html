@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#main
+		{
+			height: 500px;
+			width: 650px;
+			border: solid black 5px;
+			margin: 0 auto;
+		}
+		#img1
+		{
+			height: 400px;
+			width: 600px;
+			margin: 10px auto;
+			display: block;
+			border: solid black 3px;
+
+		}
+		#button
+		{
+			height: 35px;
+			width: 180px;
+			margin: 20px auto;
+		}
+		#bn1,#bn2
+		{
+			height: 30px;
+			width: 70px;
+			background: gray;
+			border: solid black 2px;
+			font-size: 20px;
+			border-radius: 5px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		var id=1;
+		function prev()
+		{
+			id=id-1
+			if(id<1)
+			{
+				id=4
+			}
+			document.getElementById('img1').src="image"+id+".jpg"
+		}
+		function next()
+		{
+			id=id+1   //((id=id+1)%4)+1
+			if(id>4)
+			{
+				id=1
+			}
+			document.getElementById('img1').src="image"+id+".jpg"
+		}
+	</script>
+</head>
+<body>
+       <div id="main">
+       	<img src="image1.jpg " id="img1">
+       	<div id="button">
+       		<input type="button" value="<Prev" id="bn1" onclick="prev()">
+       		<input type="button" value="Next>" id="bn2" onclick="next()">
+       	</div>
+       </div>
+</body>
+</html>

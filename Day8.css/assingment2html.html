@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@keyframes abc
+		{
+		   0%{transform: translate(0px) rotate(360deg); background: red; border-radius: 0%;}
+                 25%{transform: translate(100px) rotate(360deg); background: green; border-radius: 50%;}
+                 50%{transform: translate(200px) rotate(360deg); background: blue;  border-radius: 0%;}
+                 75%{transform: translate(100px) rotate(360deg); background: pink; border-radius: 50%;}
+                 100%{transform: translate(0px) rotate(360deg); background: red; border-radius: 0%;}
+		}
+		div
+		{
+			height: 100px;
+			width: 100px;
+			background: red;
+			margin: 20px auto;
+			animation-name: abc;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+	</style>
+</head>
+<body>
+       <div></div>
+</body>
+</html>

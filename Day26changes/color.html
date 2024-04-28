@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#d1
+		{
+			height: 200px;
+			width: 300px;
+			background: red;
+		}
+		#t1,#t2,#t3
+		{
+			width: 50px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		var r=0;
+		var g=0;
+		var b=0;
+		function decrementred()
+		{
+			 r = parseInt(document.getElementById('t1').value)
+			if(r>0) 
+			{
+				r = r-1
+			}
+			document.getElementById('t1').value = r;
+			document.getElementById('d1').style.backgroundColor= "rgb("+r+","+g+","+b+")";
+		}
+		function incrementred()
+		{
+			 r = parseInt(document.getElementById('t1').value)
+			if(r<255) 
+			{
+				r = r+1
+			}
+			document.getElementById('t1').value = r;
+			document.getElementById('d1').style.backgroundColor= "rgb("+r+","+g+","+b+")";
+
+		}
+		function decrementgreen()
+		{
+			 g = parseInt(document.getElementById('t2').value)
+			if(g>0) 
+			{
+				g = g-1
+			}
+			document.getElementById('t2').value = g;
+			document.getElementById('d1').style.backgroundColor= "rgb("+r+","+g+","+b+")";
+
+		}
+		function incrementgreen()
+		{
+		        g = parseInt(document.getElementById('t2').value)
+			if(g<255) 
+			{
+				g = g+1
+			}
+			document.getElementById('t2').value = g;
+			document.getElementById('d1').style.backgroundColor= "rgb("+r+","+g+","+b+")";
+
+		}
+		function decrementblue()
+		{
+			 b = parseInt(document.getElementById('t3').value)
+			if(b>0) 
+			{
+				b = b-1
+			}
+			document.getElementById('t3').value = b;
+			document.getElementById('d1').style.backgroundColor= "rgb("+r+","+g+","+b+")";
+
+		}
+		function incrementblue()
+		{
+			 b = parseInt(document.getElementById('t3').value)
+			if(b<255) 
+			{
+				b = b+1
+			}
+			document.getElementById('t3').value = b;
+			document.getElementById('d1').style.backgroundColor= "rgb("+r+","+g+","+b+")";
+
+		}
+
+	</script>
+</head>
+<body>
+        <div id="d1">Himanshu</div>
+        RED: <input type="button" value="-" onclick="decrementred()">
+        <input type="text" id="t1" value="0">
+        <input type="button" value="+" onclick="incrementred()"><br><br>
+        GREEN: <input type="button" value="-" onclick="decrementgreen()">
+        <input type="text" id="t2" value="0">
+       <input type="button" value="+" onclick="incrementgreen()"><br><br>
+        BLUE: <input type="button" value="-" onclick="decrementblue()">
+        <input type="text" id="t3" value="0">
+        <input type="button" value="+" onclick="incrementblue()">
+</body>
+</html>

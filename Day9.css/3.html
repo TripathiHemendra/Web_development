@@ -1,0 +1,55 @@
+
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#a
+		{
+			height: 100px;
+			width: 100px;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -50px;
+			border: 2px solid black;
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+			animation: abc 5s infinite linear;
+
+		}
+		#b
+		{
+			height: 50px;
+			width: 50px;
+			background: yellow;
+			border-radius: 50%;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -25px;
+			margin-left: -25px;
+			border: 2px solid black;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			animation: xyz 5s infinite linear;
+		}
+		@keyframes abc
+		{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+		@keyframes xyz
+		{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(-360deg);}
+		}
+	</style>
+</head>
+<body>
+       <div id="a"></div>
+       <div id="b"></div>
+</body>
+</html>

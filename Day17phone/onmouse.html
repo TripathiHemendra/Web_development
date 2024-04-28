@@ -1,0 +1,60 @@
+
+<html>
+<head>
+
+	<title></title>
+	<style type="text/css">
+		#main
+		{
+              width: 960px;
+              height: 700px;
+/*              border: green solid 2px;*/
+		}
+		#img1
+		{
+/*			border: red solid 2px;*/
+			width: 150px;
+			float: left;
+		}
+		 .ab
+                {
+                	height: 100px;
+                	width: 70px;
+                	border: grey solid 4px;
+                	border-radius: 10px;
+                	margin: 5px 5px;
+                	cursor: pointer;
+                }
+                .ab:hover
+                {
+                	border: red solid 4px;
+                }
+                #bc
+                {
+                	height: 650px;
+                	width: 700px;
+                }
+	</style>
+	<script type="text/javascript">
+		function changeImage(name)
+		{
+			document.getElementById('bc').setAttribute("src",name)
+		}
+	</script>
+</head>
+<body>
+	<div id="main">
+      <div id="img1">
+      	<img class="ab" src="image1.jpeg" onmouseover="changeImage(this.src)">
+      	<img class="ab" src="image2.jpeg" onmouseover="changeImage(this.src)">
+      	<img class="ab" src="image3.jpeg" onmouseover="changeImage(this.src)">
+      	<img class="ab" src="image4.jpeg" onmouseover="changeImage(this.src)">
+      	<img class="ab" src="image5.jpeg" onmouseover="changeImage(this.src)">
+      	<img class="ab" src="image6.jpeg" onmouseover="changeImage(this.src)">
+      </div>
+      <div id="img2">
+      	<img id="bc" src="image1.jpeg">
+      </div>
+</div>
+</body>
+</html>

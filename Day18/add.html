@@ -1,0 +1,68 @@
+
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#blackbox
+		{
+			width: 100%;
+			height: 100%;
+			background: black;
+			position: fixed;
+			top: 0;
+			left: 0;
+			opacity: 0.4;
+			display: none;
+		}
+		#aad
+		{
+			height: 300px;
+			width: 300px;
+			background: white;
+			border: 4px solid blue;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -150px;
+			margin-left: -150px;
+			display: none;
+
+		}
+		#close
+		{
+			float: right;
+			width: 20px;
+			height: 20px;
+			border: 2px solid black;
+			border-radius: 50%;
+			text-align: center;
+			background: grey;
+			cursor: pointer;
+		}
+		
+		</style>
+		<script type="text/javascript">
+			function show()
+			{
+				document.getElementById('blackbox').style.display="block"
+				document.getElementById('aad').style.display="block"
+			}
+			function delay()
+			{
+				setTimeout(show,5000)
+			}
+			function hide()
+			{
+				document.getElementById('blackbox').style.display="none"
+				document.getElementById('aad').style.display="none"
+			}
+		</script>
+</head>
+<body onload="delay()">
+       <h1> Himanshu Tripathi</h1>
+       <div id="blackbox"></div>
+       <div id="aad">
+       	<span id="close" onclick="hide()">X</span>
+       </div>
+</body>
+</html>

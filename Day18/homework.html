@@ -1,0 +1,84 @@
+
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#blackbox
+		{
+			width: 100%;
+			height: 100%;
+			background: black;
+			position: fixed;
+			top: 0;
+			left: 0;
+			opacity: 0.4;
+			display: none;
+		}
+		#whitebox
+		{
+			height: 300px;
+			width: 300px;
+			background: white;
+			border: 4px solid blue;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -150px;
+			margin-left: -150px;
+			display: none;
+
+		}
+		
+		@keyframes abc
+		{
+                from{transform:rotate(0deg); }
+                to{transform:rotate(360deg);}
+		}
+		#download
+		{
+			height: 100px;
+			width: 100px;
+			
+			margin: 300px auto;
+			border: 8px solid pink;
+			border-radius: 50%;
+			border-right-color: grey;
+			animation-name: abc;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			display: none;
+		}
+		
+		</style>
+		<script type="text/javascript">
+			function shows()
+			{
+				document.getElementById('blackbox').style.display="block"
+				document.getElementById('whitebox').style.display="block"
+				document.getElementById('download').style.display="block"
+			}
+			function show()
+			{
+				setTimeout(shows,2000)
+			}
+			function hide()
+			{
+				document.getElementById('blackbox').style.display="none"
+				document.getElementById('download').style.display="none"
+			}
+			function delay()
+			{
+				setTimeout(hide,10000)
+			}
+                      delay()
+		</script>
+</head>
+<body >
+       <input type="button" value="Download" onclick="show()">
+       <div id="whitebox"></div>
+       <div id="blackbox"></div>
+       <div id="download"></div>
+      
+</body>
+</html>

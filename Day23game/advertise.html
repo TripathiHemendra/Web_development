@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#b1
+		{
+		  font-size:100px ;
+		}
+		#blackbox
+		{
+			height: 100%;
+			width: 100%;
+			background: red;
+			opacity: 0.5;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: none;
+		}
+		#whitebox
+		{
+			height: 300px;
+			width: 300px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -150px;
+            margin-left: -150px;
+            display: none;
+            overflow: auto;
+            background-image: url(hanumanji.jpg);
+            background-size: cover;
+   		}
+		#img
+		{
+			height: 300px;
+			width: 300px;
+			position: fixed;
+			opacity: 0.5;
+		}
+		#close
+		{
+			height: 20px;
+			width: 40px;
+			float: right;
+			border: black solid 2px;
+			border-radius: 10px;
+			text-align: center;
+			background: gray;
+			color: white;
+			display: none;
+			cursor: pointer;
+		}
+
+		#timer
+		{
+			height: 20px;
+			width: 50px;
+			float: right;
+			border: black solid 2px;
+			border-radius: 10px;
+			text-align: center;
+			display: none;
+			background: lightgray;
+		}
+	</style>
+	<script type="text/javascript">
+
+		function xyz()
+		{
+			setTimeout(abc,2000)
+			// setTimeout(aaa,6000);
+		}
+
+		var time = 10;
+        var a = ""
+        function decrement()
+        {
+        	time --;
+        	document.getElementById('timer').innerHTML= "skip "+time;
+        	if (time == 0)
+        	 {
+                clearInterval(a);                
+			    document.getElementById('timer').style.display="none"
+			    document.getElementById('close').style.display="block"
+        	 }
+        }
+
+		function abc()
+		{
+			document.getElementById('blackbox').style.display="block"
+			document.getElementById('whitebox').style.display="block"
+			document.getElementById('timer').style.display="block"
+			a = setInterval(decrement,1000)
+			
+		}
+		// function aaa()
+		// {
+		// 	document.getElementById('close').style.display="block"
+		// 	document.getElementById('timer').style.display="none"
+		// }
+
+     
+		function close1()
+		{
+			document.getElementById('blackbox').style.display="none"
+			document.getElementById('whitebox').style.display="none"
+			document.getElementById('close').style.display="none"
+		}
+		
+
+	</script>
+</head>
+<body onload="xyz()">
+
+         <div id="b1">Hello</div>
+         <div id="blackbox"></div>
+         <div id="whitebox">
+         	<!-- <img src="hanumanji.jpg" id="img"> -->
+         	<div id="timer">skip 10</div>
+         	<div id="close" onclick="close1()">skip</div>
+
+         </div>
+</body>
+</html>

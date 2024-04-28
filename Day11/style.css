@@ -1,0 +1,148 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+#main
+
+{
+	width: 960px;
+	border: black solid 2px;
+	margin:0px auto;
+}
+#head
+{
+	height: 200px;
+	/*border: red solid 2px;*/
+}
+#content
+{
+	/*height: 800px; */
+/* border: red solid 2px;*/
+}
+#footer
+{
+	height: 200px;
+   /*	border: red solid 2px; */
+	background-color: grey;
+}
+.line
+{
+	background-image:url(images/bg.gif) ;
+	height: 8px;
+}
+#abc
+		{
+			/*border: 2px black solid;
+*/          
+		}
+		#abc ul
+		{
+		  border: 2px solid black;
+		  margin: 0;
+		  padding: 0;
+		  list-style: none;
+		  overflow: auto;
+		  background: cyan;
+		}
+		#abc ul li
+		{
+			float: left;
+		}
+		#abc ul li a
+		{
+			text-decoration: none;
+			color: black;
+			margin: 5px;
+			border-right: 2px solid green;
+			display: block;
+			padding: 10px 30px;
+
+		}
+		#abc ul li a:hover
+		{
+			color: red;
+		}
+		#tophead
+		{
+		 margin-top: 20px;
+		 border-bottom: 1px dashed grey;	
+		 padding-bottom: 20px;
+		}
+		#span1
+		{
+			background-image: url(images/cashon.png);
+			background-repeat: no-repeat;
+			padding-left: 30px;
+			margin-left: 10px;
+		}
+		#span2
+		{
+			background-image: url(images/policy.png);
+			background-repeat: no-repeat;
+			padding-left: 30px;
+			margin-left: 10px;
+		}
+		#span3
+		{
+			background-image: url(images/call.png);
+			background-repeat: no-repeat;
+			padding-left: 30px;
+			margin-left: 10px;
+		}
+		#img
+		{
+          padding-top: 20px;
+		}
+		#part1 img
+		{
+			height: 300px;
+	        width: 958px;
+	      /*  border: black solid 2px;*/
+		}
+		#part2 
+		{
+			overflow: auto;
+			margin-top: 10px;
+		}
+		.section
+		{
+	
+			width: 32%;
+			float: left;
+			margin-left: 10px;
+			text-align: justify;
+		}
+		#foot
+		{
+			width: 960px;
+			margin: 0px auto;
+			overflow: auto;
+			padding-top: 20px;
+		}
+		.foot1
+		{
+			float: left;
+			margin-left:30px ;
+		} 
+		.foot1 ul
+		{
+		 
+		  margin: 0;
+		  padding: 0;
+		  list-style: none;
+		  overflow: auto;
+		}
+		
+		
+		.foot1 ul li a
+		{
+			text-decoration: none;
+			color: black;
+
+		}
+		.foot1 ul li a:hover
+		{
+			color: red;
+		}
+		

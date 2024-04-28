@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#b1
+		{
+		  font-size:100px ;
+		}
+		#blackbox
+		{
+			height: 100%;
+			width: 100%;
+			background: black;
+			opacity: 0.5;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			display: none;
+		}
+		#whitebox
+		{
+			height: 300px;
+			width: 310px;
+/*			background: white;*/
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -150px;
+            margin-left: -150px;
+            display: none;
+            overflow: auto;
+
+
+		}
+		#close
+		{
+			height: 20px;
+			width: 40px;
+			float: right;
+			border: black solid 2px;
+			border-radius: 10px;
+			text-align: center;
+			background: gray;
+			display: none;
+			cursor: pointer;
+		}
+				#timer
+		{
+			height: 20px;
+			width: 50px;
+			float: right;
+			border: black solid 2px;
+			border-radius: 10px;
+			text-align: center;
+			display: none;
+		}
+		#v1
+		{
+			height: 250px;
+			width: 250px;		
+		}
+		@keyframes abc
+		{
+                from{transform:rotate(0deg); }
+                to{transform:rotate(360deg);}
+		}
+		#loading
+		{
+			height: 50px;
+			width: 50px;
+			
+			margin: 200px auto;
+			border: 8px solid white;
+			border-radius: 50%;
+			border-right-color: black;
+			animation-name: abc;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function abc()
+		{
+			document.getElementById('blackbox').style.display="block"			 
+		    document.getElementById('timer').style.display="block"
+			document.getElementById('loading').style.display="block"
+			
+			
+		}
+		var time = 5;
+        var a = ""
+        function decrement()
+        {
+        	time --;
+        	document.getElementById('timer').innerHTML= "skip "+time;
+        	if (time == 0)
+        	 {
+                clearInterval(a);                
+			    document.getElementById('timer').style.display="none"
+			    document.getElementById('close').style.display="block"
+        	 }
+        }
+		function aaa()
+		{
+			// document.getElementById('close').style.display="block"
+			document.getElementById('timer').style.display="block"
+			document.getElementById('loading').style.display="none"
+			document.getElementById('whitebox').style.display="block"
+			a = setInterval(decrement,1000)
+		}
+
+		function close1()
+		{
+			document.getElementById('blackbox').style.display="none"
+			document.getElementById('whitebox').style.display="none"
+			document.getElementById('close').style.display="none"
+		}
+		function xyz()
+		{
+			setTimeout(abc,1000);
+			setTimeout(aaa,5000);
+		}
+		
+
+	</script>
+</head>
+<body onload="xyz()">
+
+         <div id="b1">Hello</div>
+         <div id="blackbox"></div>
+         <div id="loading"></div>
+         <div id="whitebox">
+         	<video src="shreeram.mp4" controls="mp4" autoplay muted id="v1"></video>
+         	<div id="timer">skip 5</div>
+         	<div id="close" onclick="close1()"><b>skip</b></div>
+         </div>
+</body>
+</html>

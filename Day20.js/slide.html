@@ -1,0 +1,32 @@
+<html>
+<head>
+      <title></title>
+      <style type="text/css">
+      	#d1
+      	{
+      		height: 100px;
+      		width: 100px;
+      		background: red;
+      	}
+      </style>
+      <script type="text/javascript" src="Jquery.js"></script>
+      <script type="text/javascript">
+      	$(document).ready(function(){
+      		$("#b1").click(function(){
+      			$("#d1").slideUp()
+      		})
+
+      		$("#b2").click(function(){
+      			$("#d1").slideDown(3000)
+      		})
+      	})
+      </script>
+
+</head>
+<body>
+      <div id="d1"></div>
+      <input type="button" value="SlideUp" id="b1">
+      <input type="button" value="SlideDown" id="b2">
+
+</body>
+</html>

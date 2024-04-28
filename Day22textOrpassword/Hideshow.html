@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function abc()
+		{
+		var a = document.getElementById('t1').style.display
+		if (a=="block")
+		 {
+               a = "none"
+		}
+		else
+		{
+			a ="block"
+		}
+		document.getElementById('t1').style.display=a;
+
+}
+
+	</script>
+</head>
+<body>
+       <input type="text" id="t1" style="display:block;"><br>
+       <input type="button" value="Hide/Show" onclick="abc()">
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#d1
+		{
+			height: 100px;
+			width: 100px;
+			background: red;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#b1").click(function(){
+				$("#d1").hide(3000)
+			})                                //fadeIn ,out  slideUp,Down
+			$("#b2").click(function(){
+				$("#d1").show(3000)
+			})
+		})
+	</script>
+</head>
+<body>
+       <div id="d1"></div>
+       <input type="button" value="Hide" id="b1" onclick="hide()">
+       <input type="button" value="show" id="b2" onclick="show()">
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#a
+		{
+			background: red;
+		       height: 100px;
+		       width: 100px;
+			display: block;
+			margin: 10px auto;
+		}
+		#ab
+		{
+			background: blue;
+			border-radius: 5px;
+			color: white;
+			display: block;
+			margin: 10px auto;
+		}
+		#ac
+		{
+			background: red;
+			border-radius: 5px;
+			display: block;
+			margin: 10px auto;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function hide()
+		{
+	      document.getElementById('a').style.display="none";
+		}
+		function show()
+		{
+	      document.getElementById('a').style.display="block";	
+		}
+	</script>
+</head>
+<body>
+	<div id="a"></div>
+       <input type="button" value="hide" id="ab" onclick="hide()">
+       <input type="button" value="show" id="ac" onclick="show()">
+</body>
+</html>

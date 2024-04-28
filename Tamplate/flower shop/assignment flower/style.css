@@ -1,0 +1,1675 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #C0C0C0;
+	font-family: "Arial";
+}
+#main
+{
+	width: 900px;
+	min-height: 400px;
+	//border: 1px solid;
+	margin:0 auto;
+}
+
+#head
+{
+	background: url(images/header.jpg);
+	height: 181px;
+	width: 900px;
+}
+
+#logo
+{
+	margin-left: 28px;
+	cursor: pointer;
+}
+
+#menu
+{
+	//border: 1px solid;
+	background: url(images/menu_bg.jpg) no-repeat;
+	margin-left: 28px;
+	margin-top: 50px;
+}
+/*css nesting*/
+#menu ul
+{
+	margin: 0 auto;
+	padding: 0;
+	overflow: auto;
+	list-style: none;
+	/*background: rgb(30,32,33);*/
+}
+#menu ul li
+{
+	float: left;
+	margin-left: 13px;
+	/*//border: 1px solid;*/
+}
+#menu ul li a
+{
+	text-decoration: none;
+	/*border-right: 1px solid #ccc;*/
+	color: #fff;
+	font-size: 13px;
+	/*line-height: 30px;*/
+	padding: 15px 6px;
+	display: block;
+}
+
+#menu ul li.selected
+{
+	background: url(images/menu_bt_bg.gif) repeat-x;
+	background-position: 30px 9px;
+}
+
+#menu ul li:hover
+{
+	background: url(images/menu_bt_bg.gif) repeat-x;
+	background-position: 30px 9px;
+}
+
+.content
+{
+	width: 900px;
+	min-height: 840px;
+	//border: 1px solid;
+	background: url(images/center_bg.gif);
+}
+
+.contentleft
+{
+	width: 56.8%;
+	float: left;
+	height: 840px;
+	border-bottom: 1px dashed #CCC;
+	/*background: url(images/left_content_bg.gif);*/
+	background: url(images/center_bg.gif);
+	/*background-size: 100%;*/
+	
+	
+}
+
+.contentright
+{
+	width: 42.7%;
+	float: right;
+	height: 840px;
+	/*border: 1px solid red;*/
+	border-bottom: 1px dashed #AAA;
+}
+
+.cltop
+{
+	border-bottom:1px dashed #AAA;
+	height: 193px;
+	margin: 0 20px;
+}
+
+.cltop .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	/*margin-left: 15px;*/
+	margin-top: 25px;
+	padding-left: 30px;
+}
+
+.cltop img
+{
+	width: 31%;
+	float: left;
+	margin-top: 20px;
+	cursor: pointer;
+	/*margin-left: 20px;
+	/*border: 1px solid red;*/
+}
+
+.contentinfo
+{
+	width: 62%;
+	height: 135px;
+	font-size: 13px;
+	/*line-height: 130%;*/
+	margin-top: 20px;
+	background: url(images/box_center.gif);
+	background-size: 110%;
+	background-position: -5px 0;
+	/*margin-right: 30px;*/
+	margin-left: 25px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	float: left;
+}
+
+.contentinfo .sp1
+{
+	margin-top: 10px;
+	color: brown;
+	display: block;
+	padding-left: 13px;
+}
+
+.contentinfo p
+{
+	margin-top: 5px;
+	margin-right: 5px;
+	font-size: 11px;
+	font-family: "Arial";
+	line-height: 180%;
+	padding-right: 10px;
+	padding-left: 13px;
+	/*word-spacing: 3px;*/
+	text-align: justify;
+}
+
+.contentinfo .sp2
+{
+	color: brown;
+	text-align: right;
+	margin-right: 13px;
+	padding-top: 5px;
+	font-style: italic;
+	font-size: 11px;
+	display: block;
+	/*float: right;*/
+	cursor: pointer;
+
+}
+
+.clmid
+{
+	border-bottom:1px dashed #CCC;
+	height: 168px;
+	margin: 10px 20px;
+}
+
+
+.clmid img
+{
+	width: 31%;
+	float: left;
+	margin-top: 20px;
+	cursor: pointer;
+	/*margin-left: 20px;*/
+	/*border: 1px solid red;*/
+}
+
+.clbtm .toptittle
+{
+	font-size: 20px;
+	/*border: 1px solid;*/
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet2.gif) no-repeat;
+	margin-left: 20px;
+	margin-top: 25px;
+	padding-left: 30px;
+}
+
+.clbtm .btmcontent
+{
+	/*border: 1px solid blue;*/
+	height: 200px;
+	margin-left: 10px;
+	overflow: auto;
+	
+}
+
+.clbtm .btmcontent .btmcontentdiv
+{
+	/*border: 1px solid red;*/
+	width: 27%;
+	margin-left: 17px;
+	float: left;
+}
+
+.clbtm .btmcontent .btmcontentdiv span
+{
+	margin-top: 25px;
+	color: #888;
+	font-size: 14px;
+	display: block;
+	opacity: 0.6;
+	/*width: 28%;*/
+	/*border: 1px solid red;*/
+	/*margin-left: 10px;*/
+	text-align: center;
+}
+
+.clbtm .btmcontent .btmcontentdiv div
+{
+	width: 132px;
+	height: 120px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top: 5px;
+	/*margin-left: 20px;*/
+	/*padding-top: 10px;*/
+	background: url(images/box_center.gif);
+	background-size: 110%;
+	background-position: -5px 0;
+	overflow: auto;
+	text-align: center;
+	position: relative;
+}
+
+.clbtm .btmcontent .btmcontentdiv div img
+{
+	padding-top: 10px;
+	cursor: pointer;
+}
+.clbtm .btmcontent .btmcontentdiv div img:nth-child(2)
+{
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+.crtop
+{
+	overflow: auto;
+}
+
+.crtopleft
+{
+	margin-top: 15px;
+	font-size: 13px;
+	margin-left: 15px;
+	height: 25px;
+	/*border: 1px solid blue;*/
+	width: 40%;
+	float: left;
+}
+
+.crtopleft span
+{
+	color: brown;
+}
+
+.brdr
+{
+	border: 1px solid #DDD;
+	padding: 2px;
+	vertical-align: sub;
+}
+
+.spanimg img
+{
+	margin-right: 2px;
+	/*cursor: pointer;*/
+}
+
+.crtopright
+{
+	margin-top: 15px;
+	font-size: 13px;
+	height: 25px;
+	/*border: 1px solid blue;*/
+	width: 45%;
+	float: left;
+	color: brown;
+	vertical-align: sub;
+}
+
+.spancnt
+{
+	color: black;
+}
+
+.spancnt span
+{
+	border: 1px solid #DDD;
+	padding: 2px;
+	font-size:12px;
+	cursor: pointer;
+}
+
+.spancnt span:last-child
+{
+	background: orange;
+	color: white;
+}
+
+.spancnt span:hover
+{
+	border: 1px solid brown;
+}
+
+.cart
+{	
+	overflow: auto;
+	height: 67px;
+	background: url(images/border.gif) no-repeat;
+	background-position: 15px 52px;
+	/*border: 1px solid blue;*/
+}
+
+.cart h3
+{
+	background: url(images/cart.gif) no-repeat;
+	color: brown;
+	float: left;
+	/*border: 1px solid pink;*/
+	margin-left: 15px;
+	padding-left: 25px;
+	margin-top: 15px;
+	font-weight: 500;
+	width: 20%;
+}
+
+.cart div
+{
+	float: left;
+	height: 18px;
+	margin-top: 15px;
+	font-size: 12px;
+	border: 1px solid #DDD;
+}
+
+.cart div span
+{
+	float: left;
+	/*border: 1px solid;*/
+	padding: 2px;
+	/*margin-top: 3px;*/
+}
+
+.cart div span:last-child
+{
+	color: brown;
+}
+
+.cart a
+{
+	float: left;
+	margin-top: 17px;
+	font-size: 12px;
+	color: brown;
+	margin-left: 9px;
+}
+
+.crmid .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet3.gif) no-repeat;
+	margin-left: 15px;
+	margin-top: 20px;
+	padding-left: 30px;
+}
+
+.crmid div
+{
+	overflow: auto;
+	margin-top: 15px;
+	height: 120px;
+	/*border: 1px solid red;*/
+	margin-left: 14px;
+	background: url(images/border.gif) no-repeat;
+	background-position: 1px 105px;
+}
+.crmid div p
+{
+	width: 55%;
+	float: left;
+	font-size: 12px;
+	word-spacing: 1px;
+	margin-right: 7px;
+	font-family: "Arial";
+	text-align: justify;
+	/*border: 1px solid red;*/
+	line-height: 160%;
+}
+
+.crbtm
+{
+	/*margin-top: 7px;*/
+	height: 64%;
+	/*border: 1px solid blue;*/
+}
+
+.crbtm .crbtmleft
+{
+	width: 48%;
+	height: 100%;
+	/*border: 1px solid blue;*/
+	float: left;
+}
+
+.crbtm .crbtmright
+{
+	float: left;
+	width: 48%;
+	height: 100%;
+	/*border: 1px solid blue;*/
+}
+
+.crbtmleft .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet4.gif) no-repeat;
+	margin-left: 15px;
+	margin-top: 20px;
+	padding-left: 30px;
+}
+
+.crbtm .crbtmleft .crbtmcontentdiv span
+{
+	margin-top: 20px;
+	color: #888;
+	font-size: 12px;
+	display: block;
+	opacity: 0.6;
+	/*width: 28%;*/
+	/*border: 1px solid red;*/
+	/*margin-left: 10px;*/
+	text-align: center;
+}
+
+.crbtm .crbtmleft .crbtmcontentdiv div
+{
+	width: 132px;
+	height: 120px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-left: 24px;
+	/*padding-top: 10px;*/
+	background: url(images/box_center.gif);
+	background-size: 110%;
+	background-position: -5px 0;
+	overflow: auto;
+	text-align: center;
+	position: relative;
+}
+
+.crbtm .crbtmleft .crbtmcontentdiv div img
+{
+	padding-top: 10px;
+	cursor: pointer;
+}
+.crbtm .crbtmleft .crbtmcontentdiv div img:nth-child(2)
+{
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+.crbtmright .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet5.gif) no-repeat;
+	/*margin-left: 10px;*/
+	margin-top: 20px;
+	padding-left: 30px;
+}
+
+.crbtmright #ul1
+{
+	list-style-image: url(images/left_menu_bullet.gif);
+	margin-left: 35px;
+	margin-top: 15px;
+}
+
+.crbtmright #ul1 li
+{
+	/*margin-top: 15px;*/
+}
+
+.crbtmright #ul1 li a
+{
+	color: black;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#ul2tittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	margin-top: 20px;
+	padding-left: 30px;
+	background: url(images/bullet6.gif) no-repeat;
+}
+
+.crbtmright #ul2
+{
+	list-style-image: url(images/left_menu_bullet.gif);
+	margin-left: 35px;
+	margin-top: 15px;
+}
+
+.crbtmright #ul2 li
+{
+	/*margin-top: 15px;*/
+}
+
+.crbtmright #ul2 li a
+{
+	color: black;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#foot
+{
+	width: 900px;
+	height: 100px;
+	/*overflow: auto;*/
+	/*border:1px solid red;*/
+	background: url(images/footer_bg.gif) no-repeat;
+	background-position: bottom;
+}
+
+.footleft
+{
+	width: 450px;
+	height: 72px;
+	float: left;
+	/*border:1px solid red;*/
+	background: white;
+}
+
+.footleft div:first-child
+{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.footleft div:last-child
+{
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.footright
+{
+	margin-top: -1px;
+	width: 450px;
+	height: 72px;
+	float: left;
+	background: white;
+	/*border:1px solid red;*/
+}
+
+#footmenu
+{
+	//border: 1px solid;
+	margin-left: 120px;
+	/*margin-top: 50px;*/
+}
+/*css nesting*/
+#footmenu ul
+{
+	/*margin: 0 auto;*/
+	margin: 5px 7px;
+	padding: 0;
+	overflow: auto;
+	list-style: none;
+	/*background: rgb(30,32,33);*/
+}
+#footmenu ul li
+{
+	float: left;
+	margin-left: 8px;
+	/*//border: 1px solid;*/
+}
+#footmenu ul li a
+{
+	text-decoration: none;
+	/*border-right: 1px solid #ccc;*/
+	color: #AAA;
+	font-size: 12px;
+	/*line-height: 30px;*/
+	padding: 5px 0;
+	display: block;
+}
+
+/*/////////////////////////////Cart////////////////////////////////*/
+.cltopcart
+{
+	height: 35px;
+	margin: 0 20px;
+}
+
+.cltopcart .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	/*margin-left: 15px;*/
+	margin-top: 30px;
+	padding-left: 30px;
+}
+
+.cltable
+{
+	border: 1px solid #CCC;
+	margin-top: 20px;
+	/*margin-left: 5px;*/
+	width: 437px;
+	height: 210px;
+	/*overflow: auto;*/
+}
+
+.clcolumn1
+{
+	width: 19.5%;
+	margin-left: 1px;
+	height: 72%;
+	float: left;
+}
+.clcolumn2
+{
+	width: 33%;
+	height: 72%;
+	float: left;	
+}
+
+.clcolumn3
+{
+ 	width: 23.4%;
+	height: 72%;
+	float: left;
+}
+.clcolumn4
+{
+ 	width: 9.9%;
+	height: 72%;
+	float: left;		
+}
+
+ .clcolumn5
+ {
+ 	width: 13.8%;
+	height: 72%;
+	float: left;	
+ }
+
+.clcolumntitle
+{
+	background-color: #DDD;
+	margin: 2px 1px;
+	text-align: center;
+	font-size: 12px;
+	padding: 3px 7px;
+}
+
+.clcolumn1 div
+{
+	text-align: center;
+}
+
+.clcolumnimg
+{
+	width: 30px;
+	height: 31px;
+	border: 1px solid #CCC;
+	padding: 2px;
+	margin-top: 3px;
+}
+
+.clcolumnpname
+{
+	font-size: 12px;
+	text-align: center;
+	padding: 15px 0;
+}
+
+
+.cltablebtm
+{
+	margin-right: 15px;
+	width: 47%;
+	height: 27%;
+	float: right;
+}
+
+.cltablebtm .cltablebtmcnt1
+{
+	width: 69%;
+	font-size: 12px;
+	color: brown;
+	display: block;
+	text-align: right;
+	float: left;
+	margin-top: 11px;
+	/*border: 1px solid blue;*/
+}
+
+.cltablebtm .cltablebtmcnt2
+{
+	width: 25%;
+	font-size: 12px;
+	display: block;
+	text-align: right;
+	float: right;
+	margin-top: 11px;
+	/*border: 1px solid blue;*/
+	margin-right: 2px;
+}
+
+.cltableend
+{
+	height: 40px;
+	width:  437px;
+	font-size: 12px;
+}
+
+#cltableend1
+{
+	height: 100%;
+	float: left;
+	background: url(images/register_bt.gif) no-repeat;
+	background-position: 0 10px;
+}
+
+#cltableend1 a
+{
+	width: 72px;
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding-top: 15px;
+	padding-left: 5px;
+}
+
+#cltableend2
+{
+	height: 100%;
+	float: right;
+	text-align: right;
+	background: url(images/register_bt.gif) no-repeat;
+	background-position: 5px 10px;
+}
+
+#cltableend2 a
+{
+	width: 72px;
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding-top: 15px;
+	margin-right: 3px;
+	/*padding-left: 10px;*/
+}
+
+/*///////////////////////////////////About/////////////////////////////////////////*/
+
+.clabout .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	margin-left: 20px;
+	margin-top: 30px;
+	padding-left: 30px;
+}
+
+.claboutdesc
+{
+	font-size: 11px;
+	/*border: 1px solid blue;*/
+	height: 125px;
+	overflow: auto;
+	margin-top: 24px;
+}
+
+#claboutdesc1
+{
+	width: 60%;
+	margin-left: 33px;
+	padding-right: 8px;
+	line-height: 180%;
+	float: left;
+	text-align: justify;
+	/*border:1px solid red;*/
+}
+
+#claboutdesc1img
+{
+	width: 127px;
+	/*margin-right: 10px;*/
+	margin-left: 2px;
+	float: left;
+	height: 85px;
+	/*border:1px solid red;*/
+}
+
+#claboutdesc2
+{
+	font-size: 11px;
+	margin: 8px 33px;
+	padding-right: 5px;
+	line-height: 180%;
+	text-align: justify;
+	/*border:1px solid red;*/
+}
+
+/*////////////////////////Account//////////////////////////*/
+
+.claccount .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	margin-left: 20px;
+	margin-top: 30px;
+	padding-left: 30px;
+}
+
+.claccount p
+{
+	font-size: 11px;
+	margin: 25px 31px 0 34px;
+	padding-right: 5px;
+	line-height: 180%;
+	text-align: justify;
+	/*border:1px solid red;*/
+}
+
+.claccountinfo
+{
+	width: 90%;
+	margin: 0px auto;
+	height: 350px;
+	/*border: 1px solid blue;*/
+	position: relative;
+}
+
+#claccountinfo1
+{
+	font-size: 11px;
+	color: white;
+	background:darkred;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	padding: 4px 6px;
+	z-index: 999;
+}
+
+#claccountinfo2
+{
+	border:1px dashed #BBB;
+	width: 405px;
+	height: 190px;
+	position: absolute;
+	left: 10px;
+	top: 24px;
+}
+
+.claccountinforow1
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 36px;
+	margin-left: 35px;
+}
+
+.claccountinforow2
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 38px;
+}
+
+.claccountinforowtxt
+{
+	width: 252px;
+	margin-left: 2px;
+	height: 18px;
+	opacity: 0.4;
+}
+
+.claccountinforow3
+{
+	font-size: 12px;
+	color: brown;
+	/*border: 1px solid red;*/
+	margin-top: 13px;
+	margin-left: 110px;	
+}
+
+.claccountinforow4
+{
+	float: right;
+	font-size: 12px;
+	width: 71px;
+	height: 25px;
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 20px;
+	margin-right: 45px;
+	color: white;
+	cursor: pointer;
+	/*border: 1px solid red;*/
+	background: url(images/register_bt.gif) no-repeat;
+}
+
+/*///////////////////Contact/////////////////////////////////////////*/
+
+.clcontact .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	margin-left: 20px;
+	margin-top: 30px;
+	padding-left: 30px;
+}
+
+.clcontact p
+{
+	font-size: 11px;
+	margin: 25px 31px 0 34px;
+	padding-right: 5px;
+	line-height: 180%;
+	text-align: justify;
+	/*border:1px solid red;*/
+}
+
+.clcontactinfo
+{
+	width: 90%;
+	margin: 0px auto;
+	height: 350px;
+	/*border: 1px solid blue;*/
+	position: relative;
+}
+
+#clcontactinfo1
+{
+	font-size: 11px;
+	color: white;
+	background:darkred;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	padding: 4px 6px;
+	z-index: 999;
+}
+
+#clcontactinfo2
+{
+	border:1px dashed #BBB;
+	width: 405px;
+	height: 368px;
+	position: absolute;
+	left: 10px;
+	top: 24px;
+}
+
+.clcontactinforow1
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 36px;
+	margin-left: 62px;
+}
+
+.clcontactinforow2
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 64px;
+}
+
+.clcontactinforowtxt
+{
+	width: 252px;
+	margin-left: 2px;
+	height: 18px;
+	opacity: 0.4;
+}
+
+.clcontactinforow3
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+.clcontactinforow4
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 41px;
+}
+
+.clcontactinforow5
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 14px;
+	margin-left: 44px;
+}
+
+#area1
+{
+	margin-left: -18px;
+	opacity: 0.4;
+}
+.clcontactinforow6
+{
+	float: right;
+	font-size: 12px;
+	width: 53px;
+	height: 24px;
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 10px;
+	margin-right: 45px;
+	color: white;
+	/*border: 1px solid red;*/
+	background: url(images/contact_bt.gif) no-repeat;
+}
+/*///////////////////Register/////////////////////////////////////////*/
+
+.clregister .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	margin-left: 20px;
+	margin-top: 30px;
+	padding-left: 30px;
+}
+
+.clregister p
+{
+	font-size: 11px;
+	margin: 25px 31px 0 34px;
+	padding-right: 5px;
+	line-height: 180%;
+	text-align: justify;
+	/*border:1px solid red;*/
+}
+
+.clregisterinfo
+{
+	width: 90%;
+	margin: 0px auto;
+	height: 350px;
+	/*border: 1px solid blue;*/
+	position: relative;
+}
+
+#clregisterinfo1
+{
+	font-size: 11px;
+	color: white;
+	background:darkred;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	padding: 4px 6px;
+	z-index: 999;
+}
+
+#clregisterinfo2
+{
+	border:1px dashed #BBB;
+	width: 405px;
+	height: 318px;
+	position: absolute;
+	left: 10px;
+	top: 24px;
+}
+
+.clregisterinforow1
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 36px;
+	margin-left: 36px;
+}
+
+.clregisterinforow2
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 38px;
+}
+
+.clregisterinforow3
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 63px;
+}
+
+.clregisterinforowtxt
+{
+	width: 252px;
+	margin-left: 2px;
+	height: 18px;
+	opacity: 0.4;
+}
+
+.clregisterinforow4
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+.clregisterinforow5
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 41px;
+}
+
+.clregisterinforow6
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	margin-left: 46px;
+}
+
+.claccountinforow7
+{
+	font-size: 12px;
+	color: brown;
+	/*border: 1px solid red;*/
+	margin-top: 13px;
+	margin-left: 110px;	
+}
+
+.claccountinforow7 a
+{
+	font-size: 12px;
+	color: darkred;
+	/*border: 1px solid red;*/
+}
+
+.clregisterinforow8
+{
+	float: right;
+	font-size: 12px;
+	width: 71px;
+	height: 25px;
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 19px;
+	margin-right: 45px;
+	color: white;
+	/*border: 1px solid red;*/
+	background: url(images/register_bt.gif) no-repeat;
+}
+
+/*///////////////////////////Special//////////////////////*/
+
+.clspecialtop
+{
+	border-bottom:1px dashed #AAA;
+	height: 193px;
+	margin: 0 20px;
+}
+
+.clspecialtop .toptittle
+{
+	font-size: 20px;
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	/*margin-left: 15px;*/
+	margin-top: 25px;
+	padding-left: 30px;
+}
+
+.clspecialtop img
+{
+	width: 31%;
+	float: left;
+	margin-top: 20px;
+	cursor: pointer;
+	/*margin-left: 20px;
+	/*border: 1px solid red;*/
+}
+
+.clspecialinfo
+{
+	width: 62%;
+	height: 135px;
+	font-size: 13px;
+	/*line-height: 130%;*/
+	margin-top: 20px;
+	background: url(images/box_center.gif);
+	background-size: 110%;
+	background-position: -5px 0;
+	/*margin-right: 30px;*/
+	margin-left: 25px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	float: left;
+	position: relative;
+}
+
+.clspecialinfo .sp1
+{
+	margin-top: 10px;
+	color: brown;
+	display: block;
+	padding-left: 13px;
+}
+
+.clspecialinfo p
+{
+	margin-top: 5px;
+	margin-right: 5px;
+	font-size: 11px;
+	font-family: "Arial";
+	line-height: 180%;
+	padding-right: 10px;
+	padding-left: 13px;
+	/*word-spacing: 3px;*/
+	text-align: justify;
+}
+
+.clspecialinfo .sp2
+{
+	color: brown;
+	text-align: right;
+	margin-right: 13px;
+	padding-top: 5px;
+	font-style: italic;
+	font-size: 11px;
+	display: block;
+	/*float: right;*/
+	cursor: pointer;
+}
+
+.clspecialmid
+{
+	border-bottom:1px dashed #CCC;
+	height: 168px;
+	margin: 10px 20px;
+}
+
+
+.clspecialmid img
+{
+	width: 31%;
+	float: left;
+	margin-top: 20px;
+	cursor: pointer;
+	/*margin-left: 20px;*/
+	/*border: 1px solid red;*/
+}
+
+.clspecialmid2
+{
+	border-bottom:1px dashed #CCC;
+	height: 168px;
+	margin: 10px 20px;
+}
+
+
+.clspecialmid2 img
+{
+	width: 31%;
+	float: left;
+	margin-top: 20px;
+	cursor: pointer;
+	/*margin-left: 20px;*/
+	/*border: 1px solid red;*/
+}
+
+.clspecialmid3
+{
+	border-bottom:1px dashed #CCC;
+	height: 168px;
+	margin: 10px 20px;
+}
+
+
+.clspecialmid3 img
+{
+	width: 31%;
+	float: left;
+	margin-top: 20px;
+	cursor: pointer;
+	/*margin-left: 20px;*/
+	/*border: 1px solid red;*/
+}
+
+.clspecialinfo img
+{
+	height: 55px;
+	width: 55px;
+	position: absolute;
+	right: 0;
+	top: -20px;
+}
+
+.clspecialbtm
+{
+	/*border: 1px solid red;*/
+	margin-top: 15px;
+	margin: 15px auto;
+	width: 210px;
+	overflow: auto;
+}
+
+.clspecialbtm span
+{
+	float: left;
+	margin-left: 2px;
+	font-size: 11px;
+	color: brown;
+	border:1px solid #CCC;
+	padding: 2px 6px;
+	cursor: pointer;
+}
+
+.clspecialbtm .select
+{
+	background: darkred;
+	color: white
+}
+
+.clspecialbtm span:not(.brdr):hover
+{
+	background: darkred;
+	color: white	
+}
+
+.clspecialbtm .brdr
+{
+	border: hidden;
+	display: block;
+	margin-bottom: 2px;
+	float: left;
+	padding: 2px 0;
+	cursor: text;
+	/*padding: 0;*/
+}
+
+/*////////////////////////////////flower/////////////////////////////*/
+.clflowertop .toptittle
+{
+	font-size: 19px;
+	/*border: 1px solid;*/
+	color: brown;
+	display: block;
+	height: 25px;
+	background: url(images/bullet1.gif) no-repeat;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding-left: 30px;
+}
+
+.clflowertop .clflowertophome
+{
+	font-size: 11px;
+	margin-top: 25px;
+	margin-left: 20px;
+	/*border: 1px solid;*/
+}
+
+.clflowertop .clflowertophome a
+{
+	color: darkred;
+}
+
+.clflowertop .btmcontent
+{
+	/*border: 1px solid blue;*/
+	height: 200px;
+	margin-left: 10px;
+	margin-bottom: -40px;
+	overflow: auto;
+	
+}
+
+.clflowertop .btmcontent .btmcontentdiv
+{
+	/*border: 1px solid red;*/
+	width: 27%;
+	margin-left: 17px;
+	float: left;
+}
+
+.clflowertop .btmcontent .btmcontentdiv span
+{
+	margin-top: 25px;
+	color: #888;
+	font-size: 14px;
+	display: block;
+	opacity: 0.6;
+	/*width: 28%;*/
+	/*border: 1px solid red;*/
+	/*margin-left: 10px;*/
+	text-align: center;
+}
+
+.clflowertop .btmcontent .btmcontentdiv div
+{
+	width: 132px;
+	height: 120px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top: 5px;
+	/*margin-left: 20px;*/
+	/*padding-top: 10px;*/
+	background: url(images/box_center.gif);
+	background-size: 110%;
+	background-position: -5px 0;
+	overflow: auto;
+	text-align: center;
+	position: relative;
+}
+
+.clflowertop .btmcontent .btmcontentdiv div img
+{
+	padding-top: 10px;
+	cursor: pointer;
+}
+.clflowertop .btmcontent .btmcontentdiv div img:nth-child(2)
+{
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+////////
+
+.clflowermid
+{
+	/*border: 1px solid blue;*/
+}
+
+.clflowermid2
+{
+	margin-top: -10px;
+}
+
+.clflowermid .btmcontent
+{
+	//border: 1px solid blue;
+	height: 170px;
+	margin-left: 10px;
+	overflow: auto;
+	
+}
+
+.clflowermid .btmcontent .btmcontentdiv
+{
+	/*border: 1px solid red;*/
+	/*margin-top: -20px;*/
+	width: 27%;
+	margin-left: 17px;
+	float: left;
+}
+
+.clflowermid .btmcontent .btmcontentdiv span
+{
+	margin-top: 25px;
+	color: #888;
+	font-size: 14px;
+	display: block;
+	opacity: 0.6;
+	/*width: 28%;*/
+	/*border: 1px solid red;*/
+	/*margin-left: 10px;*/
+	text-align: center;
+}
+
+.clflowermid .btmcontent .btmcontentdiv div
+{
+	width: 132px;
+	height: 120px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top: 5px;
+	/*margin-left: 20px;*/
+	/*padding-top: 10px;*/
+	background: url(images/box_center.gif);
+	background-size: 110%;
+	background-position: -5px 0;
+	overflow: auto;
+	text-align: center;
+	position: relative;
+}
+
+.clflowermid .btmcontent .btmcontentdiv div img
+{
+	padding-top: 10px;
+	cursor: pointer;
+}
+.clflowermid .btmcontent .btmcontentdiv div img:nth-child(2)
+{
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+//////
+.clflowerbtm
+{
+	/*border: 1px solid blue;*/
+}
+
+.clflowerbtm .btmcontent
+{
+	/*border: 1px solid blue;*/
+	height: 200px;
+	/*margin-left: 10px;*/
+	padding-left: 10px;
+	overflow: auto;
+	
+}
+
+.clflowerbtm .btmcontent .btmcontentdiv
+{
+	/*border: 1px solid red;*/
+	margin-top: -20px;
+	width: 27%;
+	margin-left: 17px;
+	float: left;
+}
+
+.clflowerbtm .btmcontent .btmcontentdiv span
+{
+	margin-top: 25px;
+	color: #888;
+	font-size: 14px;
+	display: block;
+	opacity: 0.6;
+	/*width: 28%;*/
+	/*border: 1px solid red;*/
+	/*margin-left: 10px;*/
+	text-align: center;
+}
+
+.clflowerbtm .btmcontent .btmcontentdiv div
+{
+	width: 132px;
+	height: 120px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin-top: 5px;
+	/*margin-left: 20px;*/
+	/*padding-top: 10px;*/
+	background: url(images/box_center.gif);
+	background-size: 110%;
+	background-position: -5px 0;
+	overflow: auto;
+	text-align: center;
+	position: relative;
+}
+
+.clflowerbtm .btmcontent .btmcontentdiv div img
+{
+	padding-top: 10px;
+	cursor: pointer;
+}
+.clflowerbtm .btmcontent .btmcontentdiv div img:nth-child(2)
+{
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+#clspecialbtmflwr
+{
+	margin-top: -40px;
+}
+
+
+/*///////////////////Prices//////////////////////*/
+

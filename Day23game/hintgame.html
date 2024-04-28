@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#main
+		{
+			height:400px;
+			width: 600px;
+			background: #99ffbb;
+			margin: 0 auto;
+			border: black solid 5px;
+			border-radius: 20px;
+		}
+		#head
+		{
+		  padding-left: 200px;
+		  font-size: 50px;
+		  background: red;	
+		  border-top-left-radius: 10px;
+		  border-top-right-radius:  10px;
+		  border-bottom: 10px solid black;
+		}
+		#a1
+		{
+			height: 50px;
+			width: 200px;
+			margin: 30px 30px;
+			font-size: 30px;
+			border: black solid 2px;
+		}
+		#a2
+		{
+			height: 50px;
+			width: 100px;
+			border: solid black 2px;
+			background: #0099cc;
+			border-radius: 5px;
+			font-size: 30px;
+		}
+		#a3
+		{
+			font-size: 30px;
+			margin-left: 30px;
+		}
+		#a4
+		{
+			font-size: 30px;
+			margin-left: 30px;
+		}
+		#me
+		{
+			margin: 70px 150px;
+		}
+	</style>
+	<script type="text/javascript">
+	var chance = 7
+	var random=parseInt(Math.random()*100+1);
+		function game()
+		{
+			
+			var a=parseInt(document.getElementById('a1').value)
+			
+			if (a==random) 
+			{
+                       alert("Winner😎😎😎")
+                  //   document.getElementById('a1').innerHTML="Winner😎😎😎"
+                       chance=0
+              
+			}
+			else
+			{
+				if(a<random)
+				{
+	              document.getElementById('a3').innerHTML="Hints: Random number is Greater than "+a
+				}
+				else
+				{
+	              document.getElementById('a3').innerHTML="Hints: Random number is Less than "+a
+				}
+				chance--
+			}
+			document.getElementById('a4').innerHTML="Chance: "+chance
+			if (chance==0) 
+		    {
+		    	document.getElementById('a2').disabled="true"
+		    	document.getElementById('a3').innerHTML="The random number was "+random
+		    }
+
+		}
+
+	</script>
+</head>
+<body>
+	<div id="main">
+		<div id="head">Hint Game</div>
+      <input type="text" id="a1">
+      <input type="button" value="Guess" id="a2" onclick="game()" ><br>
+      <br><div id="a3">Hint:</div><br>
+      <div id="a4">Chance:</div>
+      <div id="me"> <br>&copy; This game is made by himanshu...😎<br></div>
+  </div>
+</body>
+</html>

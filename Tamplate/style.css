@@ -1,0 +1,463 @@
+body
+		{
+			background: lightgray;
+		}
+		#main
+		{
+			margin: 0 auto;
+			width: 950px;
+			height: 1100px;
+			background: white;
+		}
+		#head
+		{
+			height: 180px;
+			width: 950px;
+			background-image: url(images/header.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		#logo
+		{
+          margin-left: 20px;
+		}
+		#nav
+		{
+			height: 40px;
+			width: 700px;
+			background-image: url(images/menu_bg.png);			
+			margin: 40px 20px;
+		}
+		#nav ul
+		{
+            list-style: none;
+            overflow: auto;
+            margin: 0;
+	      padding: 0; 
+		}
+		#nav ul li
+		{
+           float: left;
+           height: 40px;
+            margin: 10px;
+            padding: 5px;
+           text-align: center;
+	      cursor: pointer;
+		}
+
+		#nav ul li a
+		{
+              text-decoration: none;
+              color: white;
+
+		}
+		#fix
+		{
+			background-image:url(images/menu_bt_bg.gif) ;
+	      background-repeat: repeat-x;
+		}
+		#nav ul li:hover
+		{
+			background-image:url(images/menu_bt_bg.gif) ;
+	      background-repeat: repeat-x;  
+           
+		}
+		#contant
+		{
+			height: 850px;
+			width: 950px;
+		
+		}
+		#contant1
+		{
+			height: 850px;
+			width: 530px;
+			float: left;
+			margin-left: 20px;
+			background:linear-gradient(to left,lightgray,white,white,white,white,white);
+
+		}
+		#contant2
+		{
+			height: 845px;
+			width: 370px;
+			float: left;
+            margin-left: 20px;
+/*            border: red solid 2px;*/
+            background: white;
+            margin-top: 5px;
+		}
+		#up
+		{
+			font-size: 20px;
+		}
+        .down
+        {
+        	margin-left: 210px;
+        }
+        span
+        {
+        	color: brown;
+        }
+		#Box,#Box3
+		{
+			font-size: 25px;
+			margin-top: 10px;
+		}
+		#Box1,#Box2
+		{
+			height: 180px;
+			width: 510px;
+			border-bottom: dashed gray 1px;
+		}
+		
+		#Box1a,#Box2a
+		{
+			margin-top: 20px;
+			float: left;
+		}
+		#Box1b,#Box2b
+
+		{
+			margin: 20px 10px;
+			border-radius: 10px;
+			height: 120px;
+			width: 310px;
+			border: solid gray 1px;
+			float: left;
+			padding: 10px 10px;
+			font-size: 15px;
+		}
+		.product
+		{
+			color: gray;
+			margin-left: 10px;
+		}
+		#Box4
+        {
+        	margin-top: 20px;
+        	height: 200px;
+        	width: 550px;
+        	
+
+        }
+        .Box41
+        {
+        	height: 160px;
+        	width: 120px;
+        	float: left;
+        	margin-left: 15px;
+        	border-radius: 10px;
+		    padding: 0px 10px;
+        }
+        #Box4a
+        {
+
+        	height: 110px;
+        	width: 110px;
+        	border: solid gray 2px;
+        	border-radius: 10px;
+        	background-image: url(images/thumb1.gif);
+			background-repeat: no-repeat;
+			margin-top: 10px;
+			background-size: cover;
+        }
+        #Box4b
+        {
+        	height: 110px;
+        	width: 110px;
+        	border: solid gray 2px;
+        	border-radius: 10px;
+        	background-image: url(images/thumb2.gif);
+			background-repeat: no-repeat;
+			margin-top: 10px;
+			background-size: cover;
+
+        }
+        #Box4c
+        {
+        	height: 110px;
+        	width: 110px;
+        	border: solid gray 2px;
+        	border-radius: 10px;
+        	background-image: url(images/thumb3.gif);
+			background-repeat: no-repeat;
+			margin-top: 10px;
+			background-size: cover;
+		 
+        }
+        .new
+        {
+        	margin-left: 60px;
+        }
+        .us
+        {
+            margin-left: 3px;  
+        }
+        .usd
+        {
+        	background: #FFD24B;
+        	cursor: pointer;
+        }
+        .us1
+        {
+        	cursor: pointer;
+        }
+        #contant21,#contant22,#contant23,#contant24,#contant26
+        {
+          height: 40px;
+        }
+        .size
+        {
+          font-size: 25px;
+          margin:0px 10px;
+        }
+        #view
+        {
+        	margin-left: 10px;
+        	color: brown;
+        	cursor: pointer;
+        }
+        #contant25
+        {
+        	height:100px ;
+        }
+        #contant25a
+        {
+        	height: 100px;
+        	width: 210px;
+        	font-size: 14px;
+        	float: left;
+        }
+        #contant25b
+        {
+        	float: left;
+            margin: 10px 5px;
+        	height: 100px;
+        	width: 150px;
+        }
+         #contant27,#contant28
+         {
+         	margin-top: 20px;
+         	margin-left: 10px;
+         	float: left;
+         }
+        .c1
+        {
+        	height: 150px;
+        	width: 110px;
+        	margin: 10px 10px;
+        	border-radius: 10px;
+		    padding: 0px 10px;
+        }
+        #contant28a ul
+		{
+            overflow: auto;
+		}
+		#contant28a ul li a
+		{
+              text-decoration: none;
+              color: black;
+              margin-left: 5px;
+		}
+		#footer
+		{
+          height: 80px;
+          width: 950px;
+		}
+		#foot1
+		{
+			border-top: dashed gray 1px;
+			height: 30px;
+		}
+		.foot1a
+		{
+			float: left;
+		}
+		.foot1b
+		{
+			float: left;
+		}
+		.foot1b ul
+		{
+            list-style: none;
+            overflow: auto;
+            margin: 0;
+	      padding: 0; 
+	      margin-left: 450px;
+		}
+		.foot1b ul li
+		{
+           float: left;
+           height: 30px;
+            margin: 1px;
+            padding: 5px;
+           text-align: center;
+	      cursor: pointer;
+		}
+
+		.foot1b ul li a
+		{
+              text-decoration: none;
+              color: gray;
+		}
+		#f3
+		{ 
+			height: 29.6px;
+		}
+
+/*About us*/
+
+		#A_Box
+		{
+			margin: 20px 0px;
+			height: 40px;
+			width: 200px;
+			font-size: 20px;
+		}
+		.A_Box1
+		{
+			height: 110px;
+			width: 520px;
+			font-size: 14px;
+
+		}
+		.A_Box11
+		{
+			height: 110px;
+			width: 380px;
+			float: left;
+		}
+		.A_Box12
+		{
+			height: 100px;
+			width: 120px;
+			margin-left: 10px;
+			float: left;
+
+		}
+
+/*flower*/
+
+		#f_1
+		{
+			height: 20px;
+			width: 300px;
+			margin: 15px 10px;
+			font-size: 14px;
+		}
+		.menu
+		{
+			height: 50px;
+			width: 300px;
+			margin-top: 450px;
+			margin-left: 200px;
+		}
+		.fb2
+		{
+			background: brown;
+		}
+		.fb1:hover
+		{
+			background: brown;
+		}
+
+
+		.menu1
+		{
+			height: 50px;
+			width: 300px;
+			margin-top: 20px;
+			margin-left: 200px;
+		}
+
+/*   account*/
+
+		#A_box
+		{
+			height: 100px;
+			width: 520px;
+			margin-top: 20px;
+			font-size: 14px;
+		}
+		#A_box1
+		{
+			height: 230px;
+			width: 450px;
+			border: dashed gray 1px;
+			margin-left: 10px;
+			margin-top: 15px;
+		}
+		#logup
+		{
+			height: 25px;
+			width: 200px;
+			padding-top: 5px;
+			background: brown;
+			color: white;
+			text-align: center;
+			margin-left: 20px;
+			margin-top: 30px;
+		}
+		#A_box11
+		{
+			height: 40px;
+			width: 400px;
+			margin-left: 30px;
+			margin-top: 30px;
+		       
+		}
+		#A_box12
+		{
+			height: 40px;
+			width: 400px;
+			margin: 5px 30px;
+		
+		}
+		#A_box13
+		{
+			height: 40px;
+			width: 250px;
+			margin: 5px 30px;
+			margin-left: 180px;
+		
+		}
+		#A_box14
+		{
+			height: 25px;
+			width: 80px;
+			background: brown;
+			margin: 5px 30px;
+			margin-left: 300px;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      padding-top: 5px;
+		
+		}
+		.text
+		{
+			height: 20px;
+			width: 300px;
+			margin-left: 10px;
+		}
+		.text1
+		{
+			height: 90px;
+			width: 300px;
+			margin-left: 30px;
+		}
+		#A_boxM
+		{
+			margin-left: 30px;
+		}
+
+		#A_box101
+		{
+			height: 380px;
+			width: 450px;
+			border: dashed gray 1px;
+			margin-left: 10px;
+			margin-top: 15px;
+		}

@@ -1,0 +1,37 @@
+<html>
+<head>
+      <title></title>
+      <style type="text/css">
+            #d1
+            {
+                  height: 100px;
+                  width: 100px;
+                  background: red;
+            }
+      </style>
+      <script type="text/javascript" src="Jquery.js"></script>
+      <script type="text/javascript">
+            $(document).ready(function(){
+                  $("#b1").click(function(){
+                        $("#d1").fadeIn(3000)
+                  })
+
+                  $("#b2").click(function(){
+                        $("#d1").fadeOut(3000)
+                  })
+                  $("#b3").click(function(){
+                        $("#d1").toggle(3000)
+                  })
+            })
+      </script>
+
+</head>
+<body>
+      <div id="d1"></div>
+      <input type="button" value="FadeIn" id="b1">
+      <input type="button" value="FadeOut" id="b2">
+      <input type="button" value="Toggle" id="b3">
+
+
+</body>
+</html>

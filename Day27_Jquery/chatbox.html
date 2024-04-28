@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#box1
+		{
+			height: 300px;
+			width: 200px; 
+			border: solid red 3px;
+			position: fixed;
+			bottom: 0px;
+			right: 80px;
+
+		}
+		#box1a
+		{
+			height: 60px;
+			background: grey;
+
+		}
+		#m1,#c1 
+		{
+			margin-left: 20px;
+			height: 50px;
+			width: 50px; 
+			border-radius: 50%;
+			background: blue;
+			float: left;
+			font-size: 40px;
+			text-align: center;
+			cursor: pointer;
+		}
+		#box2
+		{
+			height: 80px;
+			width: 80px; 
+			border-radius: 50%;
+			position: fixed;
+			bottom: 0px;
+			right: 0px;
+            background: yellow;
+            display: none;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#c1").click(function(){
+				$("#box1").hide()
+			})
+			$("#m1").click(function(){
+				$("#box1").hide()
+				$("#box2").show()
+			})
+
+				$("#box2").click(function(){
+				$("#box2").hide()
+				$("#box1").show()
+				// var a = $("#box1").style()				
+				// if (a == "hide") 
+				// {
+    //                $("#box2").show()
+				// }
+			})
+		})
+	</script>
+</head>
+<body>
+       <div id="box1">
+       	<div id="box1a">
+       		<div id="m1">-</div>
+       		<div id="c1">x</div>
+       	</div>
+       </div>
+       <div id="box2"></div>
+
+</body>
+</html>
