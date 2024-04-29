@@ -33,6 +33,7 @@
           border-radius: 5px;
           background: lightgray;
           font-size: 25px;
+		  cursor: pointer;
 		}
 		#t1
 		{
@@ -45,12 +46,29 @@
            background: white;
            text-align: center;
 		}
+		#r1
+		{
+			margin: 10px 180px;
+          height: 40px;
+          width: 110px;
+          text-align: center;
+          border: black 2px solid;
+          border-radius: 10px;
+          background:red;
+          font-size: 25px;
+		  cursor: pointer;	
+		}
+		#r1:hover
+		{
+			background: blue;
+		}
 	</style>
 	<script type="text/javascript">
-		
+		var random=parseInt(Math.random()*12+1);
+
 		function Sevenup()
 		{
-		var random=parseInt(Math.random()*12+1);
+		//var random=parseInt(Math.random()*12+1);
 
 	
 			if (random > 7) 
@@ -65,7 +83,7 @@
 		}
 		function Sevendown()
 		{			
-		var random=parseInt(Math.random()*12+1);
+		//var random=parseInt(Math.random()*12+1);
 
 			
 			if (random < 7) 
@@ -80,7 +98,7 @@
 		}
 		function Seven()
 		{		
-		var random=parseInt(Math.random()*12+1);
+		//var random=parseInt(Math.random()*12+1);
 			
 			if (random == 7) 
 			{
@@ -103,6 +121,7 @@
        <input type="button" value="Exact 7" onclick="Seven()" id="b3">
        <!-- <input type="text" id="t1"> -->
        <div id="t1"></div>
+	   <input type="button" value=" Refres " onclick="refres()" id="r1">
 </div>
 </body>
 </html>
